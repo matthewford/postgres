@@ -5,6 +5,7 @@ RUN apk-install curl
 RUN curl -o /usr/local/bin/gosu -sSL "https://github.com/tianon/gosu/releases/download/1.2/gosu-amd64"
 RUN chmod +x /usr/local/bin/gosu
 
+RUN apk-install "uuid-ossp"
 RUN apk-install "postgresql"
 RUN apk-install "postgresql-contrib"
 
